@@ -378,6 +378,7 @@ export function ChatWindow({ user }: ChatWindowProps) {
                                 key={message.id}
                                 message={message}
                                 onEdit={message.role === 'user' ? handleEditMessage : undefined}
+                                user={user}
                             />
                         ))}
 
